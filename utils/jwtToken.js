@@ -4,7 +4,7 @@ export const sendToken = (user, statusCode, res, message) => {
     expires: new Date(
       Date.now() + 1080000 * 24 * 60 * 60 * 1000
     ),
-    // httpOnly: true, // Set httpOnly to true
+    httpOnly: true, // Set httpOnly to true
     secure:true,
     sameSite:false
   };
