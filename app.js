@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://seamedia.netlify.app"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
